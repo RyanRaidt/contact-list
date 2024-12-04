@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #000000;
+  color: #f90d0d;
+  justify-content:space-evenly;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+thead tr {
+  background-color: #6c63ff;
+  color: white;
+  text-align: left;
+  font-size: 1.2em;
+ 
+}
+
+thead th {
+  padding: 15px;
+}
+
+
+tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+tbody tr:hover {
+  background-color: #c9d1de;
+  transform: scale(1.03);
+  transition: 0.2s;
+   cursor: pointer;
+}
+
+
+td {
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+
+tfoot {
+  background-color: #6c63ff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+h1 {
+  color: #6c63ff;
+  font-size: 2.5em;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+
+button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5849d3;
+}
+
+
+@media screen and (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    font-size: 0.9em;
+  }
+}
